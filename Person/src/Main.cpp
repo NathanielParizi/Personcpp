@@ -65,13 +65,19 @@ int main() {
 	pPerson->setAge(22);
 	pPerson->toString();
 
-
 	//create a new object from a function
-
+	// new allocates memory on the heap
 	Person *pnCloud = new Person();
 	pnCloud->setName("cloud");
+	pnCloud->setAge(21);
 
 	cout << pnCloud->toString() << endl;
+
+	Person *pMages = new Person[10];
+	pMages[6].setName("Poe");
+	cout << pMages[6].toString() << endl;
+	delete [] pMages;//free memory
+
 
 	delete pnCloud;
 
