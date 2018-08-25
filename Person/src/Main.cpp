@@ -44,6 +44,15 @@ int main() {
 
 	cout << p4.toString() << endl;
 
+
+	Person p5 = p1;
+	cout << p5.toString() << endl;
+
+
+	Person p6(p1);
+
+	cout << "HUH?" <<  p6.toString() << endl;
+
 	return 0;
 
 }

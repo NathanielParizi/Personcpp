@@ -21,6 +21,7 @@ private:
 public:
 
 	Person();
+	Person(const Person& other): name(other.name), age(other.age){ cout << "Person copied!" << endl;};   //
 	Person(string name){this->name = name; age=0;}
 	Person(string name, int age);
 	string toString();
