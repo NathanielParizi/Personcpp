@@ -36,11 +36,13 @@ int main() {
 
 	cout << p2.toString() << endl;
 
-	Person p3("Justin", 31);
-
-	cout << p2.toString() << endl;
+	Person p3("Justin");
 
 	cout << p3.toString() << endl;
+
+	Person p4;
+
+	cout << p4.toString() << endl;
 
 	return 0;
 

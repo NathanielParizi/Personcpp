@@ -10,18 +10,19 @@
 using namespace std;
 #include "Person.h"
 
-Person::Person() {
-	int age = 0;
-	string name = "";
+Person::Person(): name("Unnamed"), age(0){
+
 }
 
-Person::Person(string name, int age) {
+Person::Person(string name, int age): name(name), age(age) {
 
-	this->name = name;
-	this->age = age;
+//	this->name = name;
+//	this->age = age;
 }
 
-
+Person::~Person(){
+	cout << "Person destroyed" << endl;
+}
 
 void Person::setName(string name) {
 	this->name = name;

@@ -21,10 +21,10 @@ private:
 public:
 
 	Person();
-	Person(string name){}
+	Person(string name){this->name = name; age=0;}
 	Person(string name, int age);
 	string toString();
-
+	~Person();
 
 
 	void setName(string name);
